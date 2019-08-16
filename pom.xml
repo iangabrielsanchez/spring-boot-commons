@@ -4,7 +4,7 @@
 
     <groupId>io.github.iangabrielsanchez</groupId>
     <artifactId>spring-boot-commons</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>Spring Boot Commons</name>
     <description>Spring Boot Commons Library</description>
     <url>https://github.com/iangabrielsanchez/spring-boot-commons</url>
@@ -43,7 +43,7 @@
         <connection>scm:git:git://github.com/iangabrielsanchez/spring-boot-commons.git</connection>
         <developerConnection>scm:git:git@github.com:iangabrielsanchez/spring-boot-commons.git</developerConnection>
         <url>https://github.com/iangabrielsanchez/spring-boot-commons</url>
-        <tag>1.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
     <dependencies>
         <dependency>
