@@ -7,6 +7,7 @@
     <groupId>com.igcs</groupId>
     <artifactId>spring-boot-commons</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <name>Spring Boot Commons</name>
     <description>Spring Boot Commons Library</description>
     <url>https://github.com/iangabrielsanchez/spring-boot-commons</url>
     <licenses>
