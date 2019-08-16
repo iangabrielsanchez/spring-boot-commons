@@ -1,4 +1,4 @@
-package com.igcs.springcommons.config;
+package io.github.iangabrielsanchez.springboot.commons.config;
 
 import com.google.common.base.Predicate;
 import springfox.documentation.builders.RequestHandlerSelectors;

@@ -1,4 +1,4 @@
-package com.igcs.springcommons;
+package io.github.iangabrielsanchez.springboot.commons;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

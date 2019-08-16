@@ -1,4 +1,4 @@
-package com.igcs.springcommons.utils;
+package io.github.iangabrielsanchez.springboot.commons.utils;
 
 import java.lang.reflect.Field;
 

@@ -1,4 +1,4 @@
-package com.igcs.springcommons;
+package io.github.iangabrielsanchez.springboot.commons;
 
 import java.util.List;
 

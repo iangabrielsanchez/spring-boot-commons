@@ -1,7 +1,7 @@
-package com.igcs.springcommons;
+package io.github.iangabrielsanchez.springboot.commons;
 
 
-import com.igcs.springcommons.utils.ResourceUtils;
+import io.github.iangabrielsanchez.springboot.commons.utils.ResourceUtils;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
