@@ -10,7 +10,6 @@ import java.util.List;
 
 public interface CommonController<ItemType> {
 
-
     default ResponseEntity<List<ItemType>> handle( List<ItemType> list, HttpStatus status ) {
         return new ResponseEntity<>( list, status );
     }
@@ -21,6 +20,10 @@ public interface CommonController<ItemType> {
 
     default ResponseEntity<String> handle( String message, HttpStatus status ) {
         return new ResponseEntity<>( message, status );
+    }
+
+    default <T extends Exception> void fail(T exception) throws T{
+        throw exception;
     }
 
     ResponseEntity<List<ItemType>> getAll();
