@@ -3,7 +3,6 @@ package io.github.iangabrielsanchez.springboot.commons;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
@@ -22,8 +21,8 @@ public interface CommonController<ItemType> {
         return new ResponseEntity<>( message, status );
     }
 
-    default <T extends Exception> void fail(T exception) throws T{
-        throw exception;
+    default void validate( ItemType item ){
+        throw new UnsupportedOperationException("Validation for this item is not supported");
     }
 
     ResponseEntity<List<ItemType>> getAll();
