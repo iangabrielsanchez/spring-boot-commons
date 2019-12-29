@@ -19,6 +19,12 @@ jobs:
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
         restore-keys: |
           ${{ runner.os }}-maven-
+    - name: Add maven settings
+      run: |
+        mkdir -p ~/.m2
+        cd ~/.m2
+        curl ${{ secrets.MAVEN_SETTINGS_URL }} > settings.xml
+        cat settings.xml
     - name: Deploy Snapshot
       run: |
         ./mvnw clean deploy
