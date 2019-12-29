@@ -1,0 +1,17 @@
+name: Deploy Snapshot Builds
+
+on: 
+  push:
+    branches: 
+      - develop
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Deploy Snapshot
+      run: |
+        ./mvnw clean deploy
